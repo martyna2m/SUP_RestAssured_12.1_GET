@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ddef20f-34d2-436a-a902-a07324715070" name="Changes" comment="Create code">
+    <list default="true" id="1ddef20f-34d2-436a-a902-a07324715070" name="Changes" comment="Create separate method for getting coordinates">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/WeatherApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/WeatherApiTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,11 +156,29 @@
       <option name="project" value="LOCAL" />
       <updated>1704364634163</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Delete driver">
+      <option name="closed" value="true" />
+      <created>1704371655488</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1704371655488</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Create separate method for getting coordinates">
+      <option name="closed" value="true" />
+      <created>1704371687306</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1704371687306</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Create code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create code" />
+    <MESSAGE value="Delete driver" />
+    <MESSAGE value="Create separate method for getting coordinates" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create separate method for getting coordinates" />
   </component>
 </project>
