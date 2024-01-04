@@ -1,4 +1,3 @@
-browser: edge
 
 environment:
   test:
