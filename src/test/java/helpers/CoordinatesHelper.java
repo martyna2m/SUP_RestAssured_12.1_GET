@@ -2,10 +2,15 @@ package helpers;
 
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
+import models.Coordinates;
 
 public class CoordinatesHelper {
 
-    public Response shouldGetCoordinates(String city) {
+    public static Coordinates getCoordinates(String city) {
+        return new Coordinates(getLongitude(city), getLatitude(city));
+    }
+
+    private static Response shouldGetCoordinatesResponse(String city) {
         String appId = System.getProperty("appId");
 
         return RestAssured
@@ -17,13 +22,15 @@ public class CoordinatesHelper {
                 .then()
                 .statusCode(200)
                 .extract().response();
-
     }
 
-    public String getLongitude(String city){
-        return shouldGetCoordinates(city).path("[0].lon").toString();
+    private static String getLongitude(String city) {
+        return shouldGetCoordinatesResponse(city).path("[0].lon").toString();
     }
-    public String getLatitude(String city){
-        return shouldGetCoordinates(city).path("[0].lat").toString();
+
+    private static String getLatitude(String city) {
+        return shouldGetCoordinatesResponse(city).path("[0].lat").toString();
     }
+
+
 }

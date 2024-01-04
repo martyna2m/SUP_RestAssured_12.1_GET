@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ddef20f-34d2-436a-a902-a07324715070" name="Changes" comment="Create separate method for getting coordinates">
+    <list default="true" id="1ddef20f-34d2-436a-a902-a07324715070" name="Changes" comment="Create separate class for coordinates">
+      <change afterPath="$PROJECT_DIR$/src/main/java/models/Coordinates.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/helpers/CoordinatesHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/helpers/CoordinatesHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/WeatherApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/WeatherApiTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,19 +37,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_directory_selection": "C:/Users/mmichalska/IdeaProjects/SUP_RestAssured_12.1_GET/src/test/java"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\mmichalska\IdeaProjects\SUP_RestAssured_12.1_GET\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.WeatherApiTest.shouldGetWeatherForecast">
+  <component name="RunManager" selected="JUnit.WeatherApiTest">
     <configuration name="AllTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SUP_RestAssured_12.1_GET" />
       <extension name="coverage">
@@ -131,8 +134,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.WeatherApiTest.shouldGetWeatherForecast" />
         <item itemvalue="JUnit.WeatherApiTest" />
+        <item itemvalue="JUnit.WeatherApiTest.shouldGetWeatherForecast" />
         <item itemvalue="TestNG.TestNGTest.shouldGetWeatherForecast" />
         <item itemvalue="TestNG.TestNGTest" />
         <item itemvalue="JUnit.AllTests" />
@@ -172,13 +175,22 @@
       <option name="project" value="LOCAL" />
       <updated>1704371687306</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Create separate class for coordinates">
+      <option name="closed" value="true" />
+      <created>1704372366480</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1704372366480</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Create code" />
     <MESSAGE value="Delete driver" />
     <MESSAGE value="Create separate method for getting coordinates" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create separate method for getting coordinates" />
+    <MESSAGE value="Create separate class for coordinates" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create separate class for coordinates" />
   </component>
 </project>
