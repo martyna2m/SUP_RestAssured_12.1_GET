@@ -8,29 +8,13 @@ import org.junit.jupiter.params.provider.CsvFileSource;
 
 public class WeatherApiTest extends TestBase {
 
-
     @ParameterizedTest
     @CsvFileSource(files = "src/test/resources/locations.csv", numLinesToSkip = 1)
     void shouldGetWeatherForecast(String city) {
-        // System.out.println(Thread.currentThread());
-
         String appId = System.getProperty("appId");
-
         log.info("Getting coordinates for {}", city);
 
-        Response coordinatesResponse = RestAssured
-                .given()
-                .baseUri("http://api.openweathermap.org")
-                .param("appid", appId)
-                .param("q", city)
-                .get(System.getProperty("geoSuffix"))
-                .then()
-                .statusCode(200)
-                .extract().response();
-
-//powyższy kod nie został przeniesiony do oddzielnej metody, bo nabrałam wątpliwości czy mogę wykorzystywać Resta w metodach, które nie są testami
-
-
+        Response coordinatesResponse = shouldGetCoordinates(city);
         String lon = coordinatesResponse.path("[0].lon").toString();
         String lat = coordinatesResponse.path("[0].lat").toString();
         log.info("City: " + city + ", lon: " + lon + ", lat: " + lat);
@@ -46,6 +30,21 @@ public class WeatherApiTest extends TestBase {
                 .then()
                 .statusCode(200);
 
+    }
+
+
+    protected Response shouldGetCoordinates(String city) {
+        String appId = System.getProperty("appId");
+
+        return RestAssured
+                .given()
+                .baseUri("http://api.openweathermap.org")
+                .param("appid", appId)
+                .param("q", city)
+                .get(System.getProperty("geoSuffix"))
+                .then()
+                .statusCode(200)
+                .extract().response();
 
     }
 }
